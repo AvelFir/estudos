@@ -55,3 +55,32 @@ Para atribuir valor a um vetor devemos referenciar o index que queremos atribuir
 A leitura, ou o acesso aos valores dos elementos de um vetor, é semelhante a atribuiçao utilizando o index dele para referenciar o dado
 
 **System.out.println("A semana se inicia no " + semana[0])**
+
+
+## Eficiência e Complexidade
+
+A eficiência e a complexidade de um array referem-se à forma como ele consome recursos computacionais, como tempo e memória, em diferentes operações. Aqui está uma explicação sobre a eficiência e a complexidade de algumas operações comuns em arrays:
+
+### Acesso (leitura/gravação) de elementos:
+
+Eficiência: Geralmente, o acesso a um elemento específico de um array é muito eficiente, pois envolve apenas o cálculo do deslocamento a partir do endereço base do array.
+Complexidade: O acesso a um elemento tem complexidade O(1), o que significa que o tempo necessário para acessar qualquer elemento é constante e não depende do tamanho do array.
+
+### Inserção/Remoção de elementos no final do array:
+Eficiência: Inserir ou remover elementos no final de um array é eficiente, pois não requer realocação de memória ou reorganização de elementos.
+Complexidade: Tanto a inserção quanto a remoção no final do array têm complexidade O(1), desde que haja espaço livre disponível. No entanto, se o array estiver cheio e for necessário redimensioná-lo, a complexidade pode se tornar O(n), onde n é o tamanho atual do array.
+
+### Inserção/Remoção de elementos no início ou no meio do array:
+Eficiência: Inserir ou remover elementos no início ou no meio de um array pode ser menos eficiente, pois geralmente requer a realocação de memória e o deslocamento de elementos.
+Complexidade: A inserção/remoção no início ou no meio do array tem complexidade O(n), onde n é o número de elementos no array após a operação, devido à necessidade de deslocar os elementos adjacentes.
+
+### Pesquisa (ou busca) linear:
+Eficiência: A pesquisa linear envolve iterar através de todos os elementos do array para encontrar o elemento desejado.
+Complexidade: A pesquisa linear tem complexidade O(n), onde n é o número de elementos no array, pois pode ser necessário percorrer todos os elementos até encontrar o elemento desejado, ou determinar que ele não está presente.
+
+### Ordenação:
+Eficiência: A eficiência da ordenação pode variar dependendo do algoritmo de ordenação utilizado.
+Complexidade: Algoritmos de ordenação comuns, como o Quicksort ou Mergesort, têm complexidade O(n log n) em média para ordenar um array de n elementos. No entanto, alguns algoritmos, como o Bubble Sort, têm complexidade O(n^2), o que pode ser menos eficiente para arrays grandes.
+
+
+**Em resumo, a eficiência e a complexidade de um array dependem das operações realizadas e das características do array, como o tamanho e a quantidade de elementos. É importante considerar esses fatores ao projetar e implementar algoritmos que envolvam o uso de arrays para garantir um desempenho adequado.**
