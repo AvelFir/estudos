@@ -1,0 +1,11 @@
+- O(n) -> linear -> O tempo de execuçao aumenta linearmente baseado no tamanho da entrada (n).
+Ex: contar os caracteres de uma string.
+
+- O(1) -> constante -> O tempo de execuçao é sempre o mesmo independente do tamanho da entrada (n). Nao significa que o codigo so possui 1 passo, mas nao importa quantos passos sao, serao sempre os mesmos.
+Ex: ao inves de passar letra por letra da string, adicionarmos seu valor em uma variavel len dentro da string e ir acrescentando quando os caracteres forem sendo adicionados. -> Contra: gasta mais memoria pois armazenamos uma variavel.
+
+- O(n²) -> quadratica ->  O tempo de execuçao cresce quadraticamente com o tamanho do input. Com poucos dados de entrada pode igualar/superar o O(n) porem com muitos inputs ele sera mais lento.
+
+-O(log n) -> logaritmo -> O tempo de execuçao
+
+

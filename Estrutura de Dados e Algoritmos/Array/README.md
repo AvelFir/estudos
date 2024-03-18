@@ -8,6 +8,8 @@
 - Os indices geralmente começam de 0 e vão ate até o tamanho do array -1.
 - Para manipulaçao de determinado elemento em um vetor, precisamos fornecer seu identificador e o indice do elemento desejado
 - Sua indexaçao permite acesso a qualquer elemento, em qualquer instante e em qualquer ordem, sem que a sua posiçao no vetor imponha qualquer custo extra de eficiencia.
+- Arrays nao sao estruturas de dados dinamicas, entao nao podem ter seu tamanho alterado depois de criados.
+
 ## Declaraçao de um Vetor
 Um vetor é declarado da seguinte maneira:
 
